@@ -1,0 +1,72 @@
+body{
+
+}
+.lowtaperfade{
+    width: 100%;
+    height: 200rem;
+    background-image: url('low-taper-fade-ninja.gif');
+    background-position-x: center;
+    background-position-y: left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.lowtapercard{
+background-size: 250px;
+background-image: url('nword-cake_2.gif');
+border-radius: 20px;
+background-size: 250px;
+background-repeat: no-repeat;
+background-position: center;
+height: 400px;
+width: 300px;
+background-color: darkslategray;
+border-radius: 20px;
+
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.lowtapertext{
+    text-align: center;
+}
+.pos{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    gap: 50px;
+}
+.parent {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 18px;
+grid-row-gap: 24px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 1 / 4 / 2 / 5; }
+.div5 { grid-area: 2 / 1 / 3 / 2; }
+.div6 { grid-area: 2 / 2 / 3 / 3; }
+.div7 { grid-area: 2 / 3 / 3 / 4; }
+.div8 { grid-area: 2 / 4 / 3 / 5; }
+@media (min-width: 800px) and (max-width: 1000px){
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 18px;
+        grid-row-gap: 24px;
+        }
+        
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+        .div3 { grid-area: 1 / 3 / 2 / 4; }
+        .div4 { grid-area: 1 / 4 / 2 / 5; }
+        .div5 { grid-area: 2 / 1 / 3 / 2; }
+        .div6 { grid-area: 2 / 2 / 3 / 3; }
+        .div7 { grid-area: 2 / 3 / 3 / 4; }
+        .div8 { grid-area: 2 / 4 / 3 / 5; }
+}
